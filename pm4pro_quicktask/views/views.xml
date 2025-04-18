@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="pm4pro_quicktask.list">
+      <field name="name">pm4pro_quicktask list</field>
+      <field name="model">pm4pro_quicktask.pm4pro_quicktask</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="pm4pro_quicktask.action_window">
+      <field name="name">pm4pro_quicktask window</field>
+      <field name="res_model">pm4pro_quicktask.pm4pro_quicktask</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="pm4pro_quicktask.action_server">
+      <field name="name">pm4pro_quicktask server</field>
+      <field name="model_id" ref="model_pm4pro_quicktask_pm4pro_quicktask"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="pm4pro_quicktask" id="pm4pro_quicktask.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="pm4pro_quicktask.menu_1" parent="pm4pro_quicktask.menu_root"/>
+    <menuitem name="Menu 2" id="pm4pro_quicktask.menu_2" parent="pm4pro_quicktask.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="pm4pro_quicktask.menu_1_list" parent="pm4pro_quicktask.menu_1"
+              action="pm4pro_quicktask.action_window"/>
+    <menuitem name="Server to list" id="pm4pro_quicktask" parent="pm4pro_quicktask.menu_2"
+              action="pm4pro_quicktask.action_server"/>
+-->
+  </data>
+</odoo>
